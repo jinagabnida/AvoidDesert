@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: fd18c24202f131d44839c328075c7357
+timeCreated: 1518034050
+licenseType: Store
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: CATRigLLegPlatformGizmo
+    100002: CATRigLLegPlatformGizmo 1
+    100004: CATRigRibcage001Gizmo
+    100006: CATRigRibcage007Gizmo
+    100008: CATRigRibcage008Bone001Gizmo
+    100010: CATRigRibcage008Bone002Gizmo
+    100012: CATRigRibcage008Gizmo
+    100014: CATRigRLegPlatformGizmo
+    100016: CATRigRLegPlatformGizmo 1
+    100018: CATRigTail1Gizmo
+    100020: CATRigTail2Gizmo
+    100022: CATRigTail3Gizmo
+    100024: CATRigTail4Gizmo
+    100026: Horse1
+    100028: Horse1LLeg1
+    100030: Horse1LLeg1 1
+    100032: Horse1LLeg2
+    100034: Horse1LLeg2 1
+    100036: Horse1LLeg3
+    100038: Horse1LLeg3 1
+    100040: Horse1LLegAnkle
+    100042: Horse1LLegAnkle 1
+    100044: Horse1LLegPlatform
+    100046: Horse1LLegPlatform 1
+    100048: Horse1Ribcage001
+    100050: Horse1Ribcage007
+    100052: Horse1Ribcage008
+    100054: Horse1Ribcage008Bone001
+    100056: Horse1Ribcage008Bone002
+    100058: Horse1Ribcage008Bone003
+    100060: Horse1Ribcage008Bone003Gizmo
+    100062: Horse1Ribcage008Bone004
+    100064: Horse1Ribcage008Bone004Gizmo
+    100066: Horse1Ribcage008Bone005
+    100068: Horse1Ribcage008Bone005Gizmo
+    100070: Horse1Ribcage008Bone006
+    100072: Horse1Ribcage008Bone006Gizmo
+    100074: Horse1RLeg1
+    100076: Horse1RLeg1 1
+    100078: Horse1RLeg2
+    100080: Horse1RLeg2 1
+    100082: Horse1RLeg3
+    100084: Horse1RLeg3 1
+    100086: Horse1RLegAnkle
+    100088: Horse1RLegAnkle 1
+    100090: Horse1RLegPlatform
+    100092: Horse1RLegPlatform 1
+    100094: Horse1Spine1
+    100096: Horse1Spine1 1
+    100098: Horse1Spine2
+    100100: Horse1Spine2 1
+    100102: Horse1Spine3
+    100104: Horse1Spine3 1
+    100106: Horse1Spine4
+    100108: Horse1Spine5
+    100110: Horse1Tail1
+    100112: Horse1Tail2
+    100114: Horse1Tail3
+    100116: Horse1Tail4
+    100118: //RootNode
+    100120: Object002
+    100122: Plane001
+    400000: CATRigLLegPlatformGizmo
+    400002: CATRigLLegPlatformGizmo 1
+    400004: CATRigRibcage001Gizmo
+    400006: CATRigRibcage007Gizmo
+    400008: CATRigRibcage008Bone001Gizmo
+    400010: CATRigRibcage008Bone002Gizmo
+    400012: CATRigRibcage008Gizmo
+    400014: CATRigRLegPlatformGizmo
+    400016: CATRigRLegPlatformGizmo 1
+    400018: CATRigTail1Gizmo
+    400020: CATRigTail2Gizmo
+    400022: CATRigTail3Gizmo
+    400024: CATRigTail4Gizmo
+    400026: Horse1
+    400028: Horse1LLeg1
+    400030: Horse1LLeg1 1
+    400032: Horse1LLeg2
+    400034: Horse1LLeg2 1
+    400036: Horse1LLeg3
+    400038: Horse1LLeg3 1
+    400040: Horse1LLegAnkle
+    400042: Horse1LLegAnkle 1
+    400044: Horse1LLegPlatform
+    400046: Horse1LLegPlatform 1
+    400048: Horse1Ribcage001
+    400050: Horse1Ribcage007
+    400052: Horse1Ribcage008
+    400054: Horse1Ribcage008Bone001
+    400056: Horse1Ribcage008Bone002
+    400058: Horse1Ribcage008Bone003
+    400060: Horse1Ribcage008Bone003Gizmo
+    400062: Horse1Ribcage008Bone004
+    400064: Horse1Ribcage008Bone004Gizmo
+    400066: Horse1Ribcage008Bone005
+    400068: Horse1Ribcage008Bone005Gizmo
+    400070: Horse1Ribcage008Bone006
+    400072: Horse1Ribcage008Bone006Gizmo
+    400074: Horse1RLeg1
+    400076: Horse1RLeg1 1
+    400078: Horse1RLeg2
+    400080: Horse1RLeg2 1
+    400082: Horse1RLeg3
+    400084: Horse1RLeg3 1
+    400086: Horse1RLegAnkle
+    400088: Horse1RLegAnkle 1
+    400090: Horse1RLegPlatform
+    400092: Horse1RLegPlatform 1
+    400094: Horse1Spine1
+    400096: Horse1Spine1 1
+    400098: Horse1Spine2
+    400100: Horse1Spine2 1
+    400102: Horse1Spine3
+    400104: Horse1Spine3 1
+    400106: Horse1Spine4
+    400108: Horse1Spine5
+    400110: Horse1Tail1
+    400112: Horse1Tail2
+    400114: Horse1Tail3
+    400116: Horse1Tail4
+    400118: //RootNode
+    400120: Object002
+    400122: Plane001
+    2100000: wire_115115115
+    2100002: 'Material #0'
+    2300000: Object002
+    3300000: Object002
+    4300000: Plane001
+    4300002: Object002
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Plane001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
