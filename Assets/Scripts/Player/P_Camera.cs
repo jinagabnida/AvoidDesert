@@ -10,7 +10,6 @@ public class P_Camera : MonoBehaviour
     [Space]
     public float s_roughness;
     public float s_magnitude;
-    public float s_duration;
     void Start()
     {
         Cursor.visible = false;
@@ -32,27 +31,24 @@ public class P_Camera : MonoBehaviour
 
         cam.transform.eulerAngles = new Vector3(xRotate, yRotate, 0);
         #endregion
+        Vector3 playerPos = new Vector3(transform.position.x, transform.position.y - 0.1f, transform.position.z + 1.4f);
 
+        cam.transform.position = playerPos; 
 
     }
 
     IEnumerator CameraShake()
     {
-
-
-        float halfDuration = s_duration / 2;
-        float elapsed = 0f;
         float tick = 0;
 
-        while (elapsed < s_duration)
+        while (true)
         {
-            elapsed += Time.deltaTime / halfDuration;
-
+            
             tick += Time.deltaTime * s_roughness;
-            cam.transform.position = new Vector3(
-                player.position.x + Mathf.PerlinNoise(tick, 0) - .5f,
-                player.position.y + Mathf.PerlinNoise(0, tick) - .5f,
-                player.position.z) * s_magnitude * Mathf.PingPong(elapsed, halfDuration);
+            cam.transform.localPosition = new Vector3(
+                Mathf.PerlinNoise(tick, 0) - .5f,
+                Mathf.PerlinNoise(0, tick) - .5f,
+                0) * s_magnitude; 
             yield return null;
 
 

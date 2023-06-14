@@ -156,11 +156,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 474168549}
-  player: {fileID: 0}
+  player: {fileID: 144606281}
   rotateSpeed: 500
-  s_roughness: 4
+  s_roughness: 3
   s_magnitude: 0.1
-  s_duration: 5
 --- !u!4 &144606281
 Transform:
   m_ObjectHideFlags: 0
@@ -173,8 +172,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 474168550}
   - {fileID: 750875476}
+  - {fileID: 474168550}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -222,6 +221,7 @@ MonoBehaviour:
   rb: {fileID: 144606283}
   jumpPower: 5
   isJump: 0
+  anim: {fileID: 2065649647}
 --- !u!1 &474168547
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,14 +298,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474168547}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.100000024, z: -0.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1962390465}
   m_Father: {fileID: 144606281}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &527750079
 GameObject:
@@ -321,7 +321,7 @@ GameObject:
   - component: {fileID: 527750080}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -987,7 +987,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4674500420611362, guid: c83c8ef60912613488eef354b6681015, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4674500420611362, guid: c83c8ef60912613488eef354b6681015, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1447,4 +1447,9 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4df3ce82db8e66645afd54ab1d5b0262, type: 3}
   m_PrefabInstance: {fileID: 559620084}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2065649647 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 95497370292291172, guid: c83c8ef60912613488eef354b6681015, type: 3}
+  m_PrefabInstance: {fileID: 645989175}
   m_PrefabAsset: {fileID: 0}
