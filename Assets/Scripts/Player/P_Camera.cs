@@ -31,23 +31,28 @@ public class P_Camera : MonoBehaviour
 
         cam.transform.eulerAngles = new Vector3(xRotate, yRotate, 0);
         #endregion
-        Vector3 playerPos = new Vector3(transform.position.x, transform.position.y - 0.1f, transform.position.z + 1.4f);
-
-        cam.transform.position = playerPos; 
+        
+        
+         
 
     }
 
     IEnumerator CameraShake()
     {
         float tick = 0;
-
+        float cameraDown = 0;
+        Vector3 playerPos = new Vector3(transform.position.x, transform.position.y - 0.1f, transform.position.z + 1.4f);
         while (true)
         {
             
             tick += Time.deltaTime * s_roughness;
+            if (Input.GetKey(KeyCode.S))
+            {
+                cameraDown = 0.4f;
+            }
             cam.transform.localPosition = new Vector3(
                 Mathf.PerlinNoise(tick, 0) - .5f,
-                Mathf.PerlinNoise(0, tick) - .5f,
+                playerPos.y-cameraDown+Mathf.PerlinNoise(0, tick) - .5f, // 시점 안내려감
                 0) * s_magnitude; 
             yield return null;
 
