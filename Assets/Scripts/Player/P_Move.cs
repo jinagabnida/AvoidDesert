@@ -80,13 +80,17 @@ public class P_Move : MonoBehaviour
         #region 숙이기
         if (Input.GetKey(KeyCode.S) && !isJump)
         {
+
+            if (!isSukE)
+                HorseTr.localPosition = new Vector3(0, -1.65f, 0);
             isSukE = true;
             bCol.size = new Vector3(bCol.size.x, 1, bCol.size.z);
-
+            
         }
-        else if(Input.GetKeyUp(KeyCode.S))
+        else if(Input.GetKeyUp(KeyCode.S) && !isJump)
         {
             bCol.size = new Vector3(bCol.size.x, 1.5f, bCol.size.z);// 이거 Y좌표값 바꿔서 말은 안내려가게하기
+            HorseTr.localPosition = new Vector3(0,  -2, 0);
             isSukE = false;
         }
         #endregion

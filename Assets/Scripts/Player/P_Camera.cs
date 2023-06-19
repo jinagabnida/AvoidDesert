@@ -10,6 +10,11 @@ public class P_Camera : MonoBehaviour
     [Space]
     public float s_roughness;
     public float s_magnitude;
+
+    private void Awake()
+    {
+        Cursor.visible = false;
+    }
     void Start()
     {
         Cursor.visible = false;
