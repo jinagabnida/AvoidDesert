@@ -132,7 +132,7 @@ MonoBehaviour:
   HorseTr: {fileID: 2994113024618926885}
   bCol: {fileID: 2998731599396551034}
   jumpPower: 5
-  speed: 13
+  speed: 1200
   maxSpeed: 30
   isJump: 0
   isSukE: 0
