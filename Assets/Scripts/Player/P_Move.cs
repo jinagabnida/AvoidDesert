@@ -42,7 +42,7 @@ public class P_Move : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
 
-            rb.AddForce(new Vector3(-speed, 0, 0), ForceMode.Force);
+            rb.AddForce(new Vector3(0, 0, -speed*Time.deltaTime), ForceMode.Force);
             h_RotateY -= 1.5f;
             h_RotateZ += 1f;
             if (h_RotateY < -15 || h_RotateY > 10)
@@ -55,7 +55,7 @@ public class P_Move : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            rb.AddForce(new Vector3(speed, 0, 0), ForceMode.Force);
+            rb.AddForce(new Vector3(0, 0, speed * Time.deltaTime), ForceMode.Force);
             h_RotateY += 1.5f;
             h_RotateZ -= 1f;
             if (h_RotateY > 15 || h_RotateY < -10)
@@ -67,13 +67,13 @@ public class P_Move : MonoBehaviour
         }
 
 
-        if (rb.velocity.x > maxSpeed)
+        if (rb.velocity.z > maxSpeed)
         {
-            rb.velocity = new Vector3(maxSpeed, rb.velocity.y, 0);
+            rb.velocity = new Vector3(0, rb.velocity.y, maxSpeed);
         }
-        else if (rb.velocity.x < -maxSpeed)
+        else if (rb.velocity.z < -maxSpeed)
         {
-            rb.velocity = new Vector3(-maxSpeed, rb.velocity.y, 0);
+            rb.velocity = new Vector3(0, rb.velocity.y, -maxSpeed);
         }
         #endregion
 

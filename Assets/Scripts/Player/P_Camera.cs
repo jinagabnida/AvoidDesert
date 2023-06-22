@@ -11,12 +11,11 @@ public class P_Camera : MonoBehaviour
     public float s_roughness;
     public float s_magnitude;
 
-    private void Awake()
-    {
-        Cursor.visible = false;
-    }
+    
     void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+
         Cursor.visible = false;
         StartCoroutine("CameraShake");
     }
@@ -31,10 +30,10 @@ public class P_Camera : MonoBehaviour
         yRotate = yRotate + yRotateMove;
         xRotate = xRotate + xRotateMove;
 
-        xRotate = Mathf.Clamp(xRotate, -20, 35); // 위, 아래 고정
+        xRotate = Mathf.Clamp(xRotate, -30, 45); // 위, 아래 고정
         yRotate = Mathf.Clamp(yRotate, -80, 80); // 좌, 우 고정
 
-        cam.transform.eulerAngles = new Vector3(xRotate, yRotate, 0);
+        cam.transform.localEulerAngles = new Vector3(xRotate, yRotate, 0);
         #endregion
         
         
