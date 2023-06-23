@@ -59,11 +59,7 @@ MonoBehaviour:
     value: 15
   colorFilter:
     overrideState: 1
-    value:
-      r: 1
-      g: 1
-      b: 1
-      a: 1
+    value: {r: 1, g: 1, b: 1, a: 1}
   hueShift:
     overrideState: 1
     value: 0
@@ -119,8 +115,10 @@ MonoBehaviour:
     overrideState: 0
     value:
       curve:
+        serializedVersion: 2
         m_Curve:
-        - time: 0
+        - serializedVersion: 3
+          time: 0
           value: 0
           inSlope: 1
           outSlope: 1
@@ -128,7 +126,8 @@ MonoBehaviour:
           weightedMode: 0
           inWeight: 0
           outWeight: 0
-        - time: 1
+        - serializedVersion: 3
+          time: 1
           value: 1
           inSlope: 1
           outSlope: 1
@@ -275,8 +274,10 @@ MonoBehaviour:
     overrideState: 0
     value:
       curve:
+        serializedVersion: 2
         m_Curve:
-        - time: 0
+        - serializedVersion: 3
+          time: 0
           value: 0
           inSlope: 1
           outSlope: 1
@@ -284,7 +285,8 @@ MonoBehaviour:
           weightedMode: 0
           inWeight: 0
           outWeight: 0
-        - time: 1
+        - serializedVersion: 3
+          time: 1
           value: 1
           inSlope: 1
           outSlope: 1
@@ -431,8 +433,10 @@ MonoBehaviour:
     overrideState: 0
     value:
       curve:
+        serializedVersion: 2
         m_Curve:
-        - time: 0
+        - serializedVersion: 3
+          time: 0
           value: 0
           inSlope: 1
           outSlope: 1
@@ -440,7 +444,8 @@ MonoBehaviour:
           weightedMode: 0
           inWeight: 0
           outWeight: 0
-        - time: 1
+        - serializedVersion: 3
+          time: 1
           value: 1
           inSlope: 1
           outSlope: 1
@@ -587,8 +592,10 @@ MonoBehaviour:
     overrideState: 0
     value:
       curve:
+        serializedVersion: 2
         m_Curve:
-        - time: 0
+        - serializedVersion: 3
+          time: 0
           value: 0
           inSlope: 1
           outSlope: 1
@@ -596,7 +603,8 @@ MonoBehaviour:
           weightedMode: 0
           inWeight: 0
           outWeight: 0
-        - time: 1
+        - serializedVersion: 3
+          time: 1
           value: 1
           inSlope: 1
           outSlope: 1
@@ -743,6 +751,7 @@ MonoBehaviour:
     overrideState: 0
     value:
       curve:
+        serializedVersion: 2
         m_Curve: []
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -883,6 +892,7 @@ MonoBehaviour:
     overrideState: 0
     value:
       curve:
+        serializedVersion: 2
         m_Curve: []
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -1023,6 +1033,7 @@ MonoBehaviour:
     overrideState: 0
     value:
       curve:
+        serializedVersion: 2
         m_Curve: []
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -1163,6 +1174,7 @@ MonoBehaviour:
     overrideState: 0
     value:
       curve:
+        serializedVersion: 2
         m_Curve: []
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -1360,11 +1372,7 @@ MonoBehaviour:
     value: 2
   color:
     overrideState: 1
-    value:
-      r: 0.6981132
-      g: 0.14413492
-      b: 0.0032929946
-      a: 1
+    value: {r: 0.6981132, g: 0.14413492, b: 0.0032929946, a: 1}
   ambientOnly:
     overrideState: 1
     value: 1
@@ -1406,6 +1414,78 @@ MonoBehaviour:
   - {fileID: 7748993223538171575}
   - {fileID: -8533018625575423002}
   - {fileID: -4262322685626611661}
+  - {fileID: 1000846071580897445}
+  - {fileID: 615128980713646985}
+--- !u!114 &615128980713646985
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6050e2d5de785ce4d931e4dbdbf2d755, type: 3}
+  m_Name: ChromaticAberration
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  spectralLut:
+    overrideState: 1
+    value: {fileID: 0}
+    defaultState: 1
+  intensity:
+    overrideState: 1
+    value: 1
+  fastMode:
+    overrideState: 1
+    value: 0
+--- !u!114 &1000846071580897445
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40b924e2dad56384a8df2a1e111bb675, type: 3}
+  m_Name: Vignette
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  mode:
+    overrideState: 1
+    value: 0
+  color:
+    overrideState: 1
+    value: {r: 0.509434, g: 0.093716644, b: 0.093716644, a: 1}
+  center:
+    overrideState: 1
+    value: {x: 0.5, y: 0.5}
+  intensity:
+    overrideState: 1
+    value: 0.65
+  smoothness:
+    overrideState: 1
+    value: 0.752
+  roundness:
+    overrideState: 1
+    value: 0.783
+  rounded:
+    overrideState: 1
+    value: 0
+  mask:
+    overrideState: 0
+    value: {fileID: 0}
+    defaultState: 1
+  opacity:
+    overrideState: 0
+    value: 1
 --- !u!114 &7748993223538171575
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1442,11 +1522,7 @@ MonoBehaviour:
     value: 0
   color:
     overrideState: 1
-    value:
-      r: 1
-      g: 1
-      b: 1
-      a: 1
+    value: {r: 1, g: 1, b: 1, a: 1}
   fastMode:
     overrideState: 1
     value: 0
