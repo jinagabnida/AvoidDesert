@@ -45,9 +45,10 @@ GameObject:
   - component: {fileID: 2998731599396551032}
   - component: {fileID: 2998731599396551036}
   - component: {fileID: 2998731599396551037}
+  - component: {fileID: 1729163697}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155,9 +156,21 @@ MonoBehaviour:
   muzzlePos: {fileID: 2998731599250855327}
   anim: {fileID: 2998731597851397876}
   remainAmmo: 6
-  attackDelay: 0.15
+  attackDelay: 0.55
   reloadTime: 1
   isShot: 0
+--- !u!114 &1729163697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2998731599396551031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0892874f913076844a63ee7702945450, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2998731599586558419
 GameObject:
   m_ObjectHideFlags: 0

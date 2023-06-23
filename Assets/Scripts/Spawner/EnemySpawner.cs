@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public Transform spawnPos;
-    public float spawnDelay;
+    //public List<Transform> spawnPos;
     public float delayMin;
     public float delayMax;
     public List<GameObject> enemy = new List<GameObject>();
-    private int enemyType;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -27,8 +26,9 @@ public class EnemySpawner : MonoBehaviour
     {
         int beforeType=-1;
         while (P_Manager.health > 0) {
-            spawnDelay = Random.Range(delayMin, delayMax);
-            enemyType = Random.Range(0, enemy.Count);
+            float spawnDelay = Random.Range(delayMin, delayMax);
+            int enemyType = Random.Range(0, enemy.Count);
+            float randPos = Random.Range(67, 83);
             if (enemyType == beforeType)
             {
                 while (enemyType == beforeType)
@@ -36,7 +36,7 @@ public class EnemySpawner : MonoBehaviour
                     enemyType = Random.Range(0, enemy.Count);
                 }
             }
-            Instantiate(enemy[enemyType], spawnPos.position, Quaternion.identity);
+            Instantiate(enemy[enemyType], new Vector3(0,0,randPos), Quaternion.identity);
 
             beforeType = enemyType;
             yield return new WaitForSeconds(spawnDelay);

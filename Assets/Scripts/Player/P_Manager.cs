@@ -20,5 +20,6 @@ public class P_Manager : MonoBehaviour
     public static void Damge(int dmg)
     {
         health -= dmg;
+        Debug.Log(health);
     }
 }

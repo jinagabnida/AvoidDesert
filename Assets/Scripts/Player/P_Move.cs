@@ -106,6 +106,12 @@ public class P_Move : MonoBehaviour
         {
             isJump = false;
         }
+    }private void OnCollisionStay(Collision col)
+    {
+        if (col.gameObject.tag == "Ground")
+        {
+            isJump = false;
+        }
     }
 
     private void OnCollisionExit(Collision col)

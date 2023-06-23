@@ -45,7 +45,7 @@ public class P_Camera : MonoBehaviour
     {
         float tick = 0;
         float cameraDown = 0;
-        Vector3 playerPos = new Vector3(transform.position.x, transform.position.y - 0.1f, transform.position.z + 1.4f);
+        Vector3 playerPos = new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z + 1.4f);
         while (true)
         {
             

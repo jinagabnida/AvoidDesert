@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6439614658786988261}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: 0, z: 11.2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -66,8 +66,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.58, y: 3.6, z: 2.11}
-  m_Center: {x: 0, y: 0, z: 1.85}
+  m_Size: {x: 0.58, y: 3.6, z: 0.98}
+  m_Center: {x: 0, y: 0, z: 2.04}
 --- !u!65 &6439614658786988260
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -79,8 +79,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.58, y: 3.6, z: 1.84}
-  m_Center: {x: 0, y: 0, z: -2.38}
+  m_Size: {x: 0.58, y: 3.6, z: 1}
+  m_Center: {x: 0, y: 0, z: -3.38}
 --- !u!114 &8741998645453049262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,6 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
+  speed: 13
 --- !u!1001 &6439614657185828989
 PrefabInstance:
   m_ObjectHideFlags: 0
