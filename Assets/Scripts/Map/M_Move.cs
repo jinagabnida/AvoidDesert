@@ -20,7 +20,7 @@ public class M_Move : MonoBehaviour
         {
             transform.position = new Vector3(0.0f, 0.0f, 0.0f); 
         }
-        transform.position += transform.right * speed;
+        transform.position += transform.right * speed*Time.deltaTime;
 
     }
 }
