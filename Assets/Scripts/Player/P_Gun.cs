@@ -7,10 +7,11 @@ public class P_Gun : MonoBehaviour
     public GameObject gun;
     public GameObject fireEffect;
     public GameObject bullet;
+    public GameObject ammoText;
     public Transform muzzlePos;
     public Animator anim;
     int maxAmmo = 6;
-    public int remainAmmo;
+    public static int remainAmmo;
     public float attackDelay = 0.1f;
     public float reloadTime=1f;
     public bool isShot;
@@ -19,6 +20,7 @@ public class P_Gun : MonoBehaviour
     void Start()
     {
         remainAmmo = 6;
+        ammoText.active = false;
         isShot = false;
     }
 
@@ -36,6 +38,13 @@ public class P_Gun : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R)&&!isShot)
         {
             StartCoroutine("Reload");
+        }
+        if (remainAmmo <= 0)
+        {
+            ammoText.active = true;
+        }else if (remainAmmo > 0)
+        {
+            ammoText.active = false;
         }
     }
 
