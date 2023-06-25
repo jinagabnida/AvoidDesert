@@ -17,15 +17,16 @@ public class G_AmmoText : MonoBehaviour
     IEnumerator BlinkText()
     {
         float oppacity=0.2f;
-        while (true)
+        while (P_Gun.remainAmmo<=0)
         {
             if (oppacity >= 1f)
             {
                 for(int i = 0; i < 9; i++)
                 {
                     oppacity -= 0.1f;
+                    m_Text.color = new Color(255, 0, 0, oppacity);
                 }
-                yield return new WaitForSeconds(0.1f);
+                
                 
             }
             if(oppacity <=0.1f)
@@ -33,10 +34,11 @@ public class G_AmmoText : MonoBehaviour
                 for (int i = 0; i < 9; i++)
                 {
                     oppacity += 0.1f;
+                    m_Text.color = new Color(255, 0, 0, oppacity);
                 }
-                yield return new WaitForSeconds(0.1f);
+                
             }
-            m_Text.color = new Color(255,0,0,oppacity);
+            
         }
 
         yield return null;

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class M_Move : MonoBehaviour
@@ -10,17 +8,19 @@ public class M_Move : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(MapLine.position.x >= Player.position.x)
+        if (P_Manager.health > 0)
         {
-            transform.position = new Vector3(0.0f, 0.0f, 0.0f); 
+            if (MapLine.position.x >= Player.position.x)
+            {
+                transform.position = new Vector3(0.0f, 0.0f, 0.0f);
+            }
+            transform.position += transform.right * speed * Time.deltaTime;
         }
-        transform.position += transform.right * speed*Time.deltaTime;
-
     }
 }

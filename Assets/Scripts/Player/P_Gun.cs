@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class P_Gun : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class P_Gun : MonoBehaviour
     public GameObject bullet;
     public GameObject ammoText;
     public Transform muzzlePos;
+    public Text ammoZero;
     public Animator anim;
     int maxAmmo = 6;
     public static int remainAmmo;
@@ -42,10 +44,14 @@ public class P_Gun : MonoBehaviour
         if (remainAmmo <= 0)
         {
             ammoText.active = true;
-        }else if (remainAmmo > 0)
+            
+        }
+        else if (remainAmmo > 0)
         {
             ammoText.active = false;
         }
+
+
     }
 
     

@@ -35,10 +35,12 @@ public class P_Camera : MonoBehaviour
 
         cam.transform.localEulerAngles = new Vector3(xRotate, yRotate, 0);
         #endregion
-        
-        
-         
 
+        if (P_Manager.health <= 0)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 
     IEnumerator CameraShake()
@@ -56,7 +58,7 @@ public class P_Camera : MonoBehaviour
             }
             cam.transform.localPosition = new Vector3(
                 Mathf.PerlinNoise(tick, 0) - .5f,
-                playerPos.y-cameraDown+Mathf.PerlinNoise(0, tick) - .5f, // 시점 안내려감
+                playerPos.y-cameraDown+Mathf.PerlinNoise(0, tick) - .5f, 
                 0) * s_magnitude; 
             yield return null;
 

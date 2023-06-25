@@ -7,19 +7,24 @@ public class EnemySpawner : MonoBehaviour
     //public List<Transform> spawnPos;
     public float delayMin;
     public float delayMax;
+    public float a;
     public List<GameObject> enemy = new List<GameObject>();
     
 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine("EnemySpawn");
+        a = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (a == 0)
+        {
+            StartCoroutine("EnemySpawn");
+            a = 1;
+        }
     }
 
     IEnumerator EnemySpawn()

@@ -9,10 +9,13 @@ public class E_Damage : MonoBehaviour
 
     private void Update()
     {
-        transform.Translate(transform.right * speed * Time.deltaTime);
-        if (transform.position.z < -10)
+        if (P_Manager.health > 0)
         {
-            Destroy(gameObject);
+            transform.Translate(transform.right * speed * Time.deltaTime);
+            if (transform.position.z < -10)
+            {
+                Destroy(gameObject);
+            }
         }
     }
     private void OnTriggerEnter(Collider other)

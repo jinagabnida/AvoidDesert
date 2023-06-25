@@ -4,5 +4,23 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/GameStartScene.unity
+    guid: 7bfd4705d04d9384b88234214ca2ea8f
+  - enabled: 1
+    path: Assets/Scenes/DesertMap.unity
+    guid: d21bc12ef1be356479aa3d19a901ebd3
+  - enabled: 0
+    path: Assets/Scenes/GameOverScene.unity
+    guid: 438d8eaa4c6bd0d40a9a0bbeafa6386b
+  - enabled: 1
+    path: Assets/Scenes/Player_Enemy.unity
+    guid: ecc31ac739a40b945820b1096b17eb84
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/LoadingScene.unity
+    guid: 9cb530028f56ef2469fc01615dd3bfe4
   m_configObjects: {}
